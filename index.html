@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth	scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- tailwind and daisyul setUP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font owsome setUP -->
+    <script src="https://kit.fontawesome.com/62d327b163.js" crossorigin="anonymous"></script>
+
+</head>
+
+<style>
+ .poppins-thin {
+  font-family: "Poppins", sans-serif;
+ 
+}
+  .active {
+    background: blue;
+    color: white;
+     }
+</style>
+
+<body class="poppins-thin">
+
+    <!-- navbar section -->
+
+         <nav id="nav-section" class="sticky top-0 z-50">
+        <div class="navbar bg-base-100 shadow-sm">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+              </div>
+  
+              
+            </div>
+            <a class=" flex btn btn-ghost text-xl">
+              <div>English</div>
+              <img src="./assets/logo.png" alt="">
+              <div>bangla</div>
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+  
+          </div>
+          <div class="navbar-end">
+            <a href="#faq" class="btn border-blue-500 text-blue-500 mr-5 hover:bg-blue-500 hover:text-white"> <i class="fa-solid fa-question"></i>Faq</a>
+
+            <a href="#card_container" class="btn border-blue-500 text-blue-500  mr-5  hover:bg-blue-500 hover:text-white"> <i class="fas fa-book-open"></i>Learn</a>
+
+            <a id="logout-btn" class="btn border-blue-500 text-blue-500  mr-5 hover:bg-blue-500 hover:text-white">  <i class="fas fa-sign-out-alt"></i>Logout</a>
+           
+          </div>
+        </div>
+      </nav>
+
+
+    <!-- navbar section end -->
+
+
+
+    <!-- baner section -->
+
+    <div class="max-w-11/12 mx-auto" id="banner">
+        <div class="hero-content flex-col lg:flex-row-reverse" >
+          <img
+            src="./assets/hero-student.png"
+            class="" />
+          <div class="space-y-2">
+            <h1 class="text-3xl font-bold">
+                <span class="text-cyan-400">English</span> is Easy!!
+              </h1>
+              <p class="text-gray-600">
+                আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+                আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে
+                অন্য একটি Level এ
+              </p>
+
+            <div>
+
+              <fieldset class="fieldset">
+                <input value="" id="user_name" type="text" class="input" placeholder="Enter your Name" />
+              </fieldset>
+
+              <fieldset class="fieldset">
+                <input value="" id="user_password" type="password" class="input" placeholder="Password Please 123456" />
+              </fieldset>
+            </div>
+
+            <button id="login-btn" class="btn btn-primary mt-2">Get Started</button>
+          </div>
+        </div>
+      </div>
+    <!-- baner section end -->
+
+
+    <!-- lets learn section -->
+
+    <h1 id="Learn_Vocabularies" class="mt-10 justify-self-center text-3xl"><span class="text-blue-500">Let's</span> Learn Vocabularies</h1>
+
+    <section id="category-container" class="flex gap-3 mt-10 ml-5 justify-center">
+
+    </section>
+
+    
+
+    <section id="loader" class="text-center py-10 hidden">
+      <span class="loading loading-dots loading-xl"></span>
+    </section>
+
+    <!-- card section -->
+     <section>
+
+      <div id="card_container" class="w-11/12 mx-auto grid grid-cols-3 mt-5 gap-4">
+
+
+
+        
+      </div>
+     </section>
+ 
+    
+            
+        <div id="child_text"  class="max-w-11/12 mx-auto text-center mt-10 bg-gray-100 py-20 rounded-xl">
+            <p class="text-gray-600 mb-5 text-sm">আপনি এখনো কোন Lesson Select করেন ন</p>
+            <h1 class="font-semibold text-xl">একটি Lesson Select করুন।</h1>
+        </div>
+        
+    
+
+
+    <!-- Faq section start -->
+
+
+
+
+    <div class=" mt-10  ml-5" id="faq">
+      <h1  class=" justify-self-center mt-5 mb-10 text-5xl"><span class="text-blue-500">Frequently</span> Asked Questions</h1>
+
+     <div class="space-y-3">
+        <div class="collapse bg-base-100 border border-base-300 space-y-3" id="faq">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">1.  the difference between var, let, and const</div>
+            <div class="collapse-content text-sm">var and let create variables that can be reassigned another value. const creates "constant" variables that cannot be reassigned another value. developers shouldn't use var anymore. They should use let or const instead</div>
+          </div>
+
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">2. the difference between map(), forEach(), and filter()</div>
+            <div class="collapse-content text-sm">Foreach return nothing filter will return a array of maching elements or empty array  and map will return a array .</div>
+          </div>
+
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">3. explain arrow functions and how they are different from regular functions?</div>
+            <div class="collapse-content text-sm">An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage: Arrow functions don't have their own bindings to this , arguments , or super , and should not be used as methods.</div>
+          </div>
+
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">4.how JavaScript Promises work </div>
+            <div class="collapse-content text-sm">In JavaScript, a Promise is an object that will produce a single value some time in the future. If the promise is successful, it will produce a resolved value, but if something goes wrong then it will produce a reason why the promise failed. The possible outcomes here are similar to that of promises in real life</div>
+          </div>
+
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" />
+            <div class="collapse-title font-semibold">4. how closures work in javascript</div>
+            <div class="collapse-content text-sm">A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives a function access to its outer scope. In JavaScript, closures are created every time a function is created, at function creation time</div>
+          </div>
+     </div>
+
+
+
+    </div>
+    <!-- Faq section end -->
+
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+
+<dialog id="word_detail" class="modal">
+  <div class="modal-box">
+    
+    <div id="detail_container"></div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn btn-primary">Complete Learning</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+<!-- footer section -->
+
+
+   <footer id="Footer_section" class="mt-10 pb-20">
+        <p class="border border-red-100"></p>
+      
+        <!-- parent div -->
+        <div class="max-w-11/12 mx-auto pt-10 flex  items-center justify-between">
+           <!-- child div frist -->
+          <div class="space-y-1">
+        
+             
+            <div class="flex items-center space-x-1">
+                <h2 class="font-semibold text-xl">English</h2>
+                <div>
+                  <img src="./assets/logo.png" alt="" />
+                </div>
+                <h3 class="font-medium">জানালা</h3>
+              </div>
+            <h2 class="font-bold mt-5">ইংরেজি শিখুন সহজে</h2>
+            <p>Providing ED-Tech Applications since 2025</p>
+
+          </div>
+
+             <!-- child div secend -->
+              <div class="mt-8">
+                <p class="text-gray-400 font-semibold mb-2">Follow us</p>
+                <div class="flex space-x-3 items-center">
+                    <div>
+                        <a href="https://www.facebook.com/shafayet.shad.3" target="_blank"><img src="./assets/fb-thumb.png" alt=""></a>
+                    </div>
+                   <div>
+                    <a href="https://www.youtube.com/@CodeWithHarry" target="_blank" alt=""><img src="./assets/youtube-thumb.png" alt=""></a>
+                   </div>
+                 <div>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./assets/instagram-thumb.png" alt=""></a>
+                 </div>
+                   <div>
+                    <a href="https://github.com/" target="_blank"><img src="./assets/github-thumb.png" alt=""></a>
+                  </div>
+                </div>
+
+              </div>
+        </div>
+    </footer>
+
+ 
+
+<script src="./sceipts/index.js"></script>
+    
+
+</body>
+
+</html>
